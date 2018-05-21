@@ -236,7 +236,7 @@ AppModule = __decorate([
             {
                 provide: __WEBPACK_IMPORTED_MODULE_5__common_config_initial_config__["a" /* INITIAL_CONFIG */],
                 useValue: {
-                    apiURL: 'http://localhost:8080'
+                    apiURL: 'https://brothergames.herokuapp.com/'
                 }
             },
             __WEBPACK_IMPORTED_MODULE_20__services_game_service__["a" /* GameService */],
