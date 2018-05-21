@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/profile\" routerLink=\"/profile\">Profile</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/searchGames\" routerLink=\"/searchGames\">Games <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/listChanges\" routerLink=\"/listChanges\">My Exchanges</a>\n      </li>\n      \n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/listexChanges\" routerLink=\"/listexChanges\">All Exchanges</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\n      </li>\n      </ul>\n\n      <form class=\"form-inline my-2 my-lg-0\">\n        <ul class=\"navbar-nav mr-auto\">\n\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\n            <button id=\"boton\"  routerLinkActive=\"/register\" routerLink=\"/register\">Register<span class=\"sr-only\">(current)</span></button>\n          </li>\n\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\n            <button id=\"boton\" routerLinkActive=\"/signin\" routerLink=\"/signin\">Sign In<span class=\"sr-only\">(current)</span></button>\n          </li>\n\n        </ul>\n    </form>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>"
+module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/profile\" routerLink=\"/profile\">Profile</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/topGames\" routerLink=\"/topGames\">Games <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/listChanges\" routerLink=\"/listChanges\">My Exchanges</a>\n      </li>\n      \n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/listexChanges\" routerLink=\"/listexChanges\">All Exchanges</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\n      </li>\n      </ul>\n\n      <form class=\"form-inline my-2 my-lg-0\">\n        <ul class=\"navbar-nav mr-auto\">\n\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\n            <button id=\"boton\"  routerLinkActive=\"/register\" routerLink=\"/register\">Register<span class=\"sr-only\">(current)</span></button>\n          </li>\n\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\n            <button id=\"boton\" routerLinkActive=\"/signin\" routerLink=\"/signin\">Sign In<span class=\"sr-only\">(current)</span></button>\n          </li>\n\n        </ul>\n    </form>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>"
 
 /***/ }),
 
@@ -105,27 +105,24 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_change_list_page_change_list_page_component__ = __webpack_require__("../../../../../src/app/pages/change-list-page/change-list-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_change_edit_page_change_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/change-edit-page/change-edit-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_searchGame_list_page_searchGame_list_page_component__ = __webpack_require__("../../../../../src/app/pages/searchGame-list-page/searchGame-list-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_comments_comments_component__ = __webpack_require__("../../../../../src/app/pages/comments/comments.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_page_not_found_page_not_found_component__ = __webpack_require__("../../../../../src/app/pages/page-not-found/page-not-found.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_user_edit_page_user_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/user-edit-page/user-edit-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_user_list_page_user_list_page_component__ = __webpack_require__("../../../../../src/app/pages/user-list-page/user-list-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_exchange_list_page_exchange_list_page_component__ = __webpack_require__("../../../../../src/app/pages/exchange-list-page/exchange-list-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_change_list_page_changeOk_list_page_component__ = __webpack_require__("../../../../../src/app/pages/change-list-page/changeOk-list-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_code_accept_page_code_accept_page_component__ = __webpack_require__("../../../../../src/app/pages/code-accept-page/code-accept-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_profile_page_profile_page_component__ = __webpack_require__("../../../../../src/app/pages/profile-page/profile-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_edit_profile_page_edit_profile_page_component__ = __webpack_require__("../../../../../src/app/pages/edit-profile-page/edit-profile-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_newGame_service__ = __webpack_require__("../../../../../src/app/services/newGame.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_sign_in_sign_in_page_component__ = __webpack_require__("../../../../../src/app/pages/sign-in/sign-in-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__common_app_data_service__ = __webpack_require__("../../../../../src/app/common/app-data.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__services_comments_service__ = __webpack_require__("../../../../../src/app/services/comments.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_register_page_register_page_component__ = __webpack_require__("../../../../../src/app/pages/register-page/register-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_content_games_content_games_component__ = __webpack_require__("../../../../../src/app/pages/content-games/content-games.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_comments_review_comments_review_component__ = __webpack_require__("../../../../../src/app/pages/comments-review/comments-review.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__services_descriptionGame_service__ = __webpack_require__("../../../../../src/app/services/descriptionGame.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_page_not_found_page_not_found_component__ = __webpack_require__("../../../../../src/app/pages/page-not-found/page-not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_user_edit_page_user_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/user-edit-page/user-edit-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_user_list_page_user_list_page_component__ = __webpack_require__("../../../../../src/app/pages/user-list-page/user-list-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_exchange_list_page_exchange_list_page_component__ = __webpack_require__("../../../../../src/app/pages/exchange-list-page/exchange-list-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_change_list_page_changeOk_list_page_component__ = __webpack_require__("../../../../../src/app/pages/change-list-page/changeOk-list-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_code_accept_page_code_accept_page_component__ = __webpack_require__("../../../../../src/app/pages/code-accept-page/code-accept-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_profile_page_profile_page_component__ = __webpack_require__("../../../../../src/app/pages/profile-page/profile-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_edit_profile_page_edit_profile_page_component__ = __webpack_require__("../../../../../src/app/pages/edit-profile-page/edit-profile-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_game_service__ = __webpack_require__("../../../../../src/app/services/game.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_sign_in_sign_in_page_component__ = __webpack_require__("../../../../../src/app/pages/sign-in/sign-in-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__common_app_data_service__ = __webpack_require__("../../../../../src/app/common/app-data.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_register_page_register_page_component__ = __webpack_require__("../../../../../src/app/pages/register-page/register-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_topGames_list_page_topGames_list_page_component__ = __webpack_require__("../../../../../src/app/pages/topGames-list-page/topGames-list-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_comments_edit_page_comments_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/comments-edit-page/comments-edit-page.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -161,26 +158,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-
-
 var ROUTES = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */] },
-    { path: 'signin', component: __WEBPACK_IMPORTED_MODULE_23__pages_sign_in_sign_in_page_component__["a" /* SignInPageComponent */] },
-    { path: 'searchGames', component: __WEBPACK_IMPORTED_MODULE_10__pages_searchGame_list_page_searchGame_list_page_component__["a" /* SearchGameListPageComponent */] },
-    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_28__pages_register_page_register_page_component__["a" /* RegisterComponent */] },
-    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_18__pages_profile_page_profile_page_component__["a" /* ProfilePageComponent */] },
-    { path: 'editProfile', component: __WEBPACK_IMPORTED_MODULE_19__pages_edit_profile_page_edit_profile_page_component__["a" /* EditProfilePageComponent */] },
+    { path: 'signin', component: __WEBPACK_IMPORTED_MODULE_22__pages_sign_in_sign_in_page_component__["a" /* SignInPageComponent */] },
+    { path: 'topGames', component: __WEBPACK_IMPORTED_MODULE_27__pages_topGames_list_page_topGames_list_page_component__["a" /* TopGamesListPageComponent */] },
+    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_26__pages_register_page_register_page_component__["a" /* RegisterComponent */] },
+    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_17__pages_profile_page_profile_page_component__["a" /* ProfilePageComponent */] },
+    { path: 'editProfile', component: __WEBPACK_IMPORTED_MODULE_18__pages_edit_profile_page_edit_profile_page_component__["a" /* EditProfilePageComponent */] },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */] },
     {
-        path: 'users', component: __WEBPACK_IMPORTED_MODULE_14__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
+        path: 'users', component: __WEBPACK_IMPORTED_MODULE_13__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
     },
     {
-        path: 'editUsers', component: __WEBPACK_IMPORTED_MODULE_13__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_24__common_auth_service__["a" /* AuthService */]],
+        path: 'editUsers', component: __WEBPACK_IMPORTED_MODULE_12__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_23__common_auth_service__["a" /* AuthService */]],
     },
     {
         path: 'searchGame', component: __WEBPACK_IMPORTED_MODULE_10__pages_searchGame_list_page_searchGame_list_page_component__["a" /* SearchGameListPageComponent */],
+    },
+    {
+        path: 'comments', component: __WEBPACK_IMPORTED_MODULE_28__pages_comments_edit_page_comments_edit_page_component__["a" /* CommentsEditPageComponent */],
     },
     {
         path: 'listChanges', component: __WEBPACK_IMPORTED_MODULE_8__pages_change_list_page_change_list_page_component__["a" /* ChangeListPageComponent */],
@@ -189,25 +186,16 @@ var ROUTES = [
         path: 'editChanges', component: __WEBPACK_IMPORTED_MODULE_9__pages_change_edit_page_change_edit_page_component__["a" /* ChangeEditPageComponent */],
     },
     {
-        path: 'okChanges', component: __WEBPACK_IMPORTED_MODULE_16__pages_change_list_page_changeOk_list_page_component__["a" /* ChangeOkListPageComponent */],
+        path: 'okChanges', component: __WEBPACK_IMPORTED_MODULE_15__pages_change_list_page_changeOk_list_page_component__["a" /* ChangeOkListPageComponent */],
     },
     {
-        path: 'code', component: __WEBPACK_IMPORTED_MODULE_17__pages_code_accept_page_code_accept_page_component__["a" /* CodeAcceptPageComponent */],
+        path: 'code', component: __WEBPACK_IMPORTED_MODULE_16__pages_code_accept_page_code_accept_page_component__["a" /* CodeAcceptPageComponent */],
     },
     {
-        path: 'listexChanges', component: __WEBPACK_IMPORTED_MODULE_15__pages_exchange_list_page_exchange_list_page_component__["a" /* ExchangeListComponent */],
+        path: 'listexChanges', component: __WEBPACK_IMPORTED_MODULE_14__pages_exchange_list_page_exchange_list_page_component__["a" /* ExchangeListComponent */],
     },
     {
-        path: 'contentGames', component: __WEBPACK_IMPORTED_MODULE_29__pages_content_games_content_games_component__["a" /* ContentGamesComponent */],
-    },
-    {
-        path: 'comments', component: __WEBPACK_IMPORTED_MODULE_11__pages_comments_comments_component__["a" /* CommentsComponent */],
-    },
-    {
-        path: 'commentsreview', component: __WEBPACK_IMPORTED_MODULE_30__pages_comments_review_comments_review_component__["a" /* CommentsReviewComponent */],
-    },
-    {
-        path: '**', component: __WEBPACK_IMPORTED_MODULE_12__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
+        path: '**', component: __WEBPACK_IMPORTED_MODULE_11__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
     }
 ];
 var AppModule = (function () {
@@ -221,29 +209,28 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */],
             __WEBPACK_IMPORTED_MODULE_10__pages_searchGame_list_page_searchGame_list_page_component__["a" /* SearchGameListPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__pages_comments_comments_component__["a" /* CommentsComponent */],
-            __WEBPACK_IMPORTED_MODULE_30__pages_comments_review_comments_review_component__["a" /* CommentsReviewComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
-            __WEBPACK_IMPORTED_MODULE_23__pages_sign_in_sign_in_page_component__["a" /* SignInPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_28__pages_register_page_register_page_component__["a" /* RegisterComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
+            __WEBPACK_IMPORTED_MODULE_22__pages_sign_in_sign_in_page_component__["a" /* SignInPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__pages_register_page_register_page_component__["a" /* RegisterComponent */],
             __WEBPACK_IMPORTED_MODULE_8__pages_change_list_page_change_list_page_component__["a" /* ChangeListPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__pages_exchange_list_page_exchange_list_page_component__["a" /* ExchangeListComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__pages_change_list_page_changeOk_list_page_component__["a" /* ChangeOkListPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__pages_code_accept_page_code_accept_page_component__["a" /* CodeAcceptPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_exchange_list_page_exchange_list_page_component__["a" /* ExchangeListComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_change_list_page_changeOk_list_page_component__["a" /* ChangeOkListPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_code_accept_page_code_accept_page_component__["a" /* CodeAcceptPageComponent */],
             __WEBPACK_IMPORTED_MODULE_9__pages_change_edit_page_change_edit_page_component__["a" /* ChangeEditPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__pages_profile_page_profile_page_component__["a" /* ProfilePageComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__pages_edit_profile_page_edit_profile_page_component__["a" /* EditProfilePageComponent */],
-            __WEBPACK_IMPORTED_MODULE_29__pages_content_games_content_games_component__["a" /* ContentGamesComponent */],
+            __WEBPACK_IMPORTED_MODULE_28__pages_comments_edit_page_comments_edit_page_component__["a" /* CommentsEditPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__pages_profile_page_profile_page_component__["a" /* ProfilePageComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__pages_edit_profile_page_edit_profile_page_component__["a" /* EditProfilePageComponent */],
+            __WEBPACK_IMPORTED_MODULE_27__pages_topGames_list_page_topGames_list_page_component__["a" /* TopGamesListPageComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_20__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_19__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(ROUTES),
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["e" /* ReactiveFormsModule */],
-            __WEBPACK_IMPORTED_MODULE_22__angular_http__["c" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_21__angular_http__["c" /* HttpModule */]
         ],
         providers: [
             {
@@ -252,12 +239,10 @@ AppModule = __decorate([
                     apiURL: 'http://localhost:8080'
                 }
             },
-            __WEBPACK_IMPORTED_MODULE_21__services_newGame_service__["a" /* NewGameService */],
-            __WEBPACK_IMPORTED_MODULE_27__services_comments_service__["a" /* CommentsService */],
-            __WEBPACK_IMPORTED_MODULE_24__common_auth_service__["a" /* AuthService */],
-            __WEBPACK_IMPORTED_MODULE_25__common_app_data_service__["a" /* AppDataService */],
-            __WEBPACK_IMPORTED_MODULE_26__services_users_service__["a" /* UsersService */],
-            __WEBPACK_IMPORTED_MODULE_31__services_descriptionGame_service__["a" /* DescriptionGameService */],
+            __WEBPACK_IMPORTED_MODULE_20__services_game_service__["a" /* GameService */],
+            __WEBPACK_IMPORTED_MODULE_23__common_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_24__common_app_data_service__["a" /* AppDataService */],
+            __WEBPACK_IMPORTED_MODULE_25__services_users_service__["a" /* UsersService */],
             __WEBPACK_IMPORTED_MODULE_4__common_config_app_configuration_service__["a" /* AppConfiguration */]
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
@@ -560,35 +545,16 @@ var Change = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Comment; });
 var Comment = (function () {
-    function Comment(description, name) {
-        this.description = description;
-        this.name = name;
+    function Comment(contenido, name, rate, id) {
+        this.rate = rate;
+        this.content = contenido;
+        this.user = name;
+        this.id = id;
     }
     return Comment;
 }());
 
 //# sourceMappingURL=comment.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/models/description.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DescriptionGame; });
-var DescriptionGame = (function () {
-    function DescriptionGame(photo, name, description, price, storeGame, link) {
-        this.photo = photo;
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.storeGame = storeGame;
-        this.link = link;
-    }
-    return DescriptionGame;
-}());
-
-//# sourceMappingURL=description.js.map
 
 /***/ }),
 
@@ -613,21 +579,42 @@ var Exrequests = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/newGame.ts":
+/***/ "../../../../../src/app/models/game.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewGame; });
-var NewGame = (function () {
-    function NewGame(photo, name, description) {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
+var Game = (function () {
+    function Game(id, name, image, comment, description, rate, seller) {
+        this.id = id;
         this.name = name;
+        this.image = image;
+        this.comments = comment;
         this.description = description;
-        this.photo = photo;
+        this.rateAcum = rate;
+        this.seller = seller;
     }
-    return NewGame;
+    return Game;
 }());
 
-//# sourceMappingURL=newGame.js.map
+//# sourceMappingURL=game.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/models/seller.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Seller; });
+var Seller = (function () {
+    function Seller(price, link) {
+        this.price = price;
+        this.link = link;
+    }
+    return Seller;
+}());
+
+//# sourceMappingURL=seller.js.map
 
 /***/ }),
 
@@ -1034,7 +1021,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/pages/comments-review/comments-review.component.css":
+/***/ "../../../../../src/app/pages/comments-edit-page/comments-edit-page.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -1052,87 +1039,20 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ "../../../../../src/app/pages/comments-review/comments-review.component.html":
+/***/ "../../../../../src/app/pages/comments-edit-page/comments-edit-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>COMMENTS</h2>\n<table class=\"table table-bordered\">\n    <thead>\n    <tr>\n        <th></th>\n        <th>Name</th>\n        <th>Comment</th>\n\n    </tr>\n    <tr *ngFor=\"let comments of comments\">\n\n        <td>{{comment.name}}</td>\n        <td>{{comment.description}}</td>\n\n\n    </tr>\n    </thead>\n\n</table>"
+module.exports = "<div class=\"container\">\r\n    <h2>Edit comments</h2>\r\n    <form [formGroup]=\"commentsForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n        <div class=\"form-group\">\r\n            <label for=\"content\">Content</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"content\" formControlName=\"content\" required>\r\n        </div>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"user\">User</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"user\" formControlName=\"content\" required>\r\n        </div>\r\n\r\n\r\n        <button type=\"submit\" class=\"btn btn-success\">Save</button>\r\n        <button type=\"button\" class=\"btn btn-primary\" routerLinkActive=\"/searchGame\" routerLink=\"/searchGame\">return</button>\r\n\r\n\r\n    </form>\r\n</div>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/pages/comments-review/comments-review.component.ts":
+/***/ "../../../../../src/app/pages/comments-edit-page/comments-edit-page.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommentsReviewComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommentsEditPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_comments_service__ = __webpack_require__("../../../../../src/app/services/comments.service.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var CommentsReviewComponent = (function () {
-    function CommentsReviewComponent(commentsService) {
-        this.commentsService = commentsService;
-        this.comments = [];
-    }
-    CommentsReviewComponent.prototype.ngOnInit = function () {
-        this.comments = this.commentsService.list();
-    };
-    return CommentsReviewComponent;
-}());
-CommentsReviewComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-comments-review',
-        template: __webpack_require__("../../../../../src/app/pages/comments-review/comments-review.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/pages/comments-review/comments-review.component.css")]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_comments_service__["a" /* CommentsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_comments_service__["a" /* CommentsService */]) === "function" && _a || Object])
-], CommentsReviewComponent);
-
-var _a;
-//# sourceMappingURL=comments-review.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/comments/comments.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/comments/comments.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\n  <h2>Edit searchGame</h2>\n  <form [formGroup]=\"commentsForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n    <div class=\"form-group\">\n      <label for=\"description\">Name</label>\n      <input type=\"text\" class=\"form-control\" id=\"name\" formControlName=\"name\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"priority\">description</label>\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"description\">\n    </div>\n\n\n    <button type=\"submit\" class=\"btn btn-success\">Ok</button>\n    <button type=\"button\" class=\"btn btn-primary\" routerLinkActive=\"/commentsreview\" routerLink=\"/commentsreview\">review comments</button>\n\n\n  </form>\n</div>"
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/comments/comments.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommentsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_comments_service__ = __webpack_require__("../../../../../src/app/services/comments.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_game_service__ = __webpack_require__("../../../../../src/app/services/game.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1148,108 +1068,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CommentsComponent = (function () {
-    function CommentsComponent(commentsService, formBuilder, router) {
-        this.commentsService = commentsService;
+var CommentsEditPageComponent = (function () {
+    function CommentsEditPageComponent(gameService, formBuilder, router) {
+        this.gameService = gameService;
         this.formBuilder = formBuilder;
         this.router = router;
     }
-    CommentsComponent.prototype.ngOnInit = function () {
+    CommentsEditPageComponent.prototype.ngOnInit = function () {
         this.commentsForm = this.formBuilder.group({
+            content: '',
             name: '',
-            description: '',
+            rate: '',
         });
     };
-    CommentsComponent.prototype.onSubmit = function () {
-        this.commentsService.create(this.commentsForm.get('name').value, this.commentsForm.get('description').value);
-        this.router.navigate(['/commentsreview']);
+    CommentsEditPageComponent.prototype.onSubmit = function () {
+        var _this = this;
+        this.gameService.registerCommentByGame(this.commentsForm.get('content').value, this.commentsForm.get('name').value, this.commentsForm.get('rate').value).subscribe(function (serverResponse) {
+            _this.router.navigate(['/comments']);
+        }, function (error) {
+            console.log(error);
+        });
+        this.router.navigate(['/comments']);
     };
-    return CommentsComponent;
+    return CommentsEditPageComponent;
 }());
-CommentsComponent = __decorate([
+CommentsEditPageComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-comments',
-        template: __webpack_require__("../../../../../src/app/pages/comments/comments.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/pages/comments/comments.component.css")]
+        selector: 'app-comments-edit-page',
+        template: __webpack_require__("../../../../../src/app/pages/comments-edit-page/comments-edit-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/comments-edit-page/comments-edit-page.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_comments_service__["a" /* CommentsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_comments_service__["a" /* CommentsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === "function" && _c || Object])
-], CommentsComponent);
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_game_service__["a" /* GameService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_game_service__["a" /* GameService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === "function" && _c || Object])
+], CommentsEditPageComponent);
 
 var _a, _b, _c;
-//# sourceMappingURL=comments.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/content-games/content-games.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/content-games/content-games.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n<!------ Include the above in your HEAD tag ---------->\n\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">  <h4 >MARIO BROS</h4></div>\n            <div class=\"panel-body\">\n                <div class=\"col-md-4 col-xs-12 col-sm-6 col-lg-4\">\n                    <img alt=\"User Pic\" src=\"https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_SuperMarioBros_image1600w.jpg\" id=\"profile-image1\" class=\"img-circle img-responsive\" width=\"200\" height=\"200\">\n\n\n                </div>\n\n                    <hr>\n                    <ul class=\"container details\" >\n\n                    </ul>\n                    <hr>\n                    <h2> </h2>\n                    <table class=\"table table-bordered\">\n                        <thead>\n                        <tr>\n                            <th></th>\n                            <th>Name</th>\n                            <th>Description</th>\n                            <th>Price</th>\n                            <th>StoreGame</th>\n                            <th>Link</th>\n\n                        </tr>\n                        \n                        </thead>\n                        <tr *ngFor=\"let DescriptionGame of DescriptionGames\">\n                            <td><img [src]=\"DescriptionGame.photo\" width=\"150\" height=\"150\" /></td>\n                            <td>{{DescriptionGame.name}}</td>\n                         <td>{{DescriptionGame.description}}</td>\n                         <td>{{DescriptionGame.price}}</td>\n                         <td>{{DescriptionGame.storeGame}}</td>\n                            <td><a href=\"https://{{DescriptionGame.link}}\">{{DescriptionGame.link}}</a></td>\n\n                     \n                       \n                        </tr>\n\n                    </table>\n                <button type=\"button\" class=\"btn btn-primary\" routerLinkActive=\"/comments\" routerLink=\"/comments\">Comments</button>\n\n    </div>\n        </div>\n    </div>\n</div>"
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/content-games/content-games.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContentGamesComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_descriptionGame_service__ = __webpack_require__("../../../../../src/app/services/descriptionGame.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var ContentGamesComponent = (function () {
-    function ContentGamesComponent(DescriptionGameService, formBuilder) {
-        this.DescriptionGameService = DescriptionGameService;
-        this.formBuilder = formBuilder;
-        this.DescriptionGames = [];
-    }
-    ContentGamesComponent.prototype.ngOnInit = function () {
-        this.DescriptionGames = this.DescriptionGameService.list();
-        this.todoForm = this.formBuilder.group({
-            name: "", completed: ''
-        });
-    };
-    return ContentGamesComponent;
-}());
-ContentGamesComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-content-games',
-        template: __webpack_require__("../../../../../src/app/pages/content-games/content-games.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/pages/content-games/content-games.component.css")]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_descriptionGame_service__["a" /* DescriptionGameService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_descriptionGame_service__["a" /* DescriptionGameService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object])
-], ContentGamesComponent);
-
-var _a, _b;
-//# sourceMappingURL=content-games.component.js.map
+//# sourceMappingURL=comments-edit-page.component.js.map
 
 /***/ }),
 
@@ -1411,7 +1264,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "\nh2 {\n    font-size: 24px;\n    text-transform: uppercase;\n    color: #ffffff;\n    font-weight: 600;\n    margin-bottom: 30px;\n    font-family: 'fantasy';\n}\nh4 {\n    font-size: 19px;\n    line-height: 1.375em;\n    color: #ffffff;\n    font-weight: 400;\n    margin-bottom: 30px;\n    font-family: 'fantasy';\n}\n#encabezado {\n    \n    background-color: rgba(168, 169, 172, 0.788);\n    color: #fff;\n    padding: 100px 25px;\n    font-family: 'fantasy';\n    font-family: 'fantasy';\n    text-align: center;\n}\n\n#boton{\n    border: none;\n    content:'';\n    position: unset;\n    \n    \n    color: #ffffff;\n    height: 42px;\n    background: rgba(28, 28, 29, 0.788);\n    border-radius: 5px;\n    transition: all 2s ease;\n   }\n\n#boton:hover {\n    background: rgb(255, 255, 255);\n    color: rgba(2, 44, 105, 0.788);\n    box-shadow: inset 0 0 0 3px rgba(168, 169, 172, 0.788);\n   }\n\n#about{\n    top: 100px;\n    background-color: rgba(120, 120, 122, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n\n#brand{\n    border: 4px solid black;\n}\n\n\n\n", ""]);
+exports.push([module.i, "\r\nh2 {\r\n    font-size: 24px;\r\n    text-transform: uppercase;\r\n    color: #ffffff;\r\n    font-weight: 600;\r\n    margin-bottom: 30px;\r\n    font-family: 'fantasy';\r\n}\r\nh4 {\r\n    font-size: 19px;\r\n    line-height: 1.375em;\r\n    color: #ffffff;\r\n    font-weight: 400;\r\n    margin-bottom: 30px;\r\n    font-family: 'fantasy';\r\n}\r\n#encabezado {\r\n    \r\n    background-color: rgba(168, 169, 172, 0.788);\r\n    color: #fff;\r\n    padding: 100px 25px;\r\n    font-family: 'fantasy';\r\n    font-family: 'fantasy';\r\n    text-align: center;\r\n}\r\n\r\n#boton{\r\n    border: none;\r\n    content:'';\r\n    position: unset;\r\n    \r\n    \r\n    color: #ffffff;\r\n    height: 42px;\r\n    background: rgba(28, 28, 29, 0.788);\r\n    border-radius: 5px;\r\n    transition: all 2s ease;\r\n   }\r\n\r\n#boton:hover {\r\n    background: rgb(255, 255, 255);\r\n    color: rgba(2, 44, 105, 0.788);\r\n    box-shadow: inset 0 0 0 3px rgba(168, 169, 172, 0.788);\r\n   }\r\n\r\n#about{\r\n    top: 100px;\r\n    background-color: rgba(120, 120, 122, 0.788);\r\n    color: rgb(255, 255, 255);\r\n    padding: 80px 25px;\r\n    font-family: 'fantasy';\r\n    text-align: center;\r\n}\r\n\r\n#brand{\r\n    border: 4px solid black;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -1424,7 +1277,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/home-page/home-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<head>\n    <link href=\"https://fonts.googleapis.com/css?family=Montserrat\" rel=\"stylesheet\" type=\"text/css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Lato\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n</head>\n\n\n<div id=\"encabezado\">\n    <h1>Brother Games</h1>\n    <form>\n        <div class=\"input-group\">\n            <input type=\"text\" class=\"form-control\" size=\"50\" placeholder=\"Search Game\" required>\n            <div class=\"input-group-btn\">\n                <button id=\"boton\" type=\"button\" class=\"btn btn-info\" routerLinkActive=\"/contentGames\" routerLink=\"/contentGames\">Search</button>\n            </div>\n        </div>\n    </form>\n</div>\n\n<div id=\"about\" class=\"container-fluid\">\n    <div class=\"row\">\n        <div class=\"col-sm-8\">\n            <h2>About Brother Games </h2><br>\n            <h4>On this page you can search, consult and exchange the video games you want, in addition to consulting the prices of each of them in the different internet gaming platforms.</h4>\n            <br>\n            <h4>To be able to exchange a game you must first register to be able to log in and make the exchange</h4>\n         </div>\n        <div id=\"centerbrand\">\n            <img id=\"brand\"  src=\"/assets/images/videojuegos.jpeg\" width=\"250\" height=\"175\">\n        </div>\n    </div>\n</div>"
+module.exports = "\r\n<head>\r\n    <link href=\"https://fonts.googleapis.com/css?family=Montserrat\" rel=\"stylesheet\" type=\"text/css\">\r\n    <link href=\"https://fonts.googleapis.com/css?family=Lato\" rel=\"stylesheet\" type=\"text/css\">\r\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\r\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n</head>\r\n\r\n\r\n<div id=\"encabezado\">\r\n    <h1>Brother Games</h1>\r\n    <form>\r\n        <div class=\"input-group\">\r\n            <input type=\"text\" class=\"form-control\" size=\"50\" placeholder=\"Search Game\" required>\r\n            <div class=\"input-group-btn\">\r\n                <button id=\"boton\" type=\"button\" class=\"btn btn-info\" routerLinkActive=\"/contentGames\" routerLink=\"/contentGames\">Search</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</div>\r\n\r\n<div id=\"about\" class=\"container-fluid\">\r\n    <div class=\"row\">\r\n        <div class=\"col-sm-8\">\r\n            <h2>About Brother Games </h2><br>\r\n            <h4>On this page you can search, consult and exchange the video games you want, in addition to consulting the prices of each of them in the different internet gaming platforms.</h4>\r\n            <br>\r\n            <h4>To be able to exchange a game you must first register to be able to log in and make the exchange</h4>\r\n         </div>\r\n        <div id=\"centerbrand\">\r\n            <img id=\"brand\"  src=\"/assets/images/videojuegos.jpeg\" width=\"250\" height=\"175\">\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -1434,6 +1287,9 @@ module.exports = "\n<head>\n    <link href=\"https://fonts.googleapis.com/css?fa
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_game_service__ = __webpack_require__("../../../../../src/app/services/game.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1444,10 +1300,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var HomePageComponent = (function () {
-    function HomePageComponent() {
+    function HomePageComponent(gameService, formBuilder, router) {
+        this.gameService = gameService;
+        this.formBuilder = formBuilder;
+        this.router = router;
+        this.games = [];
     }
     HomePageComponent.prototype.ngOnInit = function () {
+        this.homeForm = this.formBuilder.group({
+            name: '',
+        });
+    };
+    HomePageComponent.prototype.onSubmit = function () {
+        var _this = this;
+        //sessionStorage.setItem('name', this.homeForm.get('name').value);
+        //this.router.navigate(['/searchGame']);
+        console.log(this.homeForm.get('name').value);
+        this.gameService.getGame(this.homeForm.get('name').value).subscribe(function (serverResponse) {
+            _this.games = serverResponse;
+        }, function (error) {
+            console.log(error);
+        });
     };
     return HomePageComponent;
 }());
@@ -1457,9 +1334,10 @@ HomePageComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/pages/home-page/home-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/home-page/home-page.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_game_service__["a" /* GameService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_game_service__["a" /* GameService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === "function" && _c || Object])
 ], HomePageComponent);
 
+var _a, _b, _c;
 //# sourceMappingURL=home-page.component.js.map
 
 /***/ }),
@@ -1533,7 +1411,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".container{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(120, 120, 122, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: left;\n}", ""]);
 
 // exports
 
@@ -1699,7 +1577,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".container{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(120, 120, 122, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n\n#centerbrand{\n    position: relative;\n    width: 300px;\n    height: 100px;\n}\n\n#tabla{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(0, 0, 0, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n", ""]);
 
 // exports
 
@@ -1712,7 +1590,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/searchGame-list-page/searchGame-list-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>5 OF THE BEST GAMES OF THE MONTH</h2>\n<table class=\"table table-bordered\">\n <thead>\n   <tr>\n       <th></th>\n       <th>Name</th>\n     <th>Description</th>\n   \n   </tr>\n   <tr *ngFor=\"let newGame of newGames\">\n       <td><img [src]=\"newGame.photo\" width=\"150\" height=\"150\" /></td>\n       <td>{{newGame.name}}</td>\n    <td>{{newGame.description}}</td>\n\n  \n   </tr>\n </thead>\n\n</table>\n"
+module.exports = "\r\n<script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>\r\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\r\n<!------ Include the above in your HEAD tag ---------->\r\n\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"panel panel-default\">\r\n            <div class=\"panel-heading\">\r\n            <div class=\"panel-body\">\r\n\r\n              <hr>\r\n                <ul class=\"container details\" >\r\n\r\n                </ul>\r\n                <hr>\r\n                <h2> </h2>\r\n                <table id=\"tabla\" class=\"table table-bordered\">\r\n                    <thead>\r\n\r\n                        <th> RATE = {{game.rateAcum}}</th>\r\n                        <th>{{game.name}}</th>\r\n                        <th>{{game.description}}</th>\r\n                        <td><img [src]= game.photo width=\"150\" height=\"150\" /></td>\r\n\r\n                    </thead>\r\n\r\n                </table>\r\n\r\n\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLinkActive=\"/comments\" routerLink=\"/comments\">Comments ++</button>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1722,7 +1600,8 @@ module.exports = "<h2>5 OF THE BEST GAMES OF THE MONTH</h2>\n<table class=\"tabl
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchGameListPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_newGame_service__ = __webpack_require__("../../../../../src/app/services/newGame.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_game_service__ = __webpack_require__("../../../../../src/app/services/game.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1734,13 +1613,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var SearchGameListPageComponent = (function () {
-    function SearchGameListPageComponent(newGameService) {
-        this.newGameService = newGameService;
-        this.newGames = [];
+    function SearchGameListPageComponent(gameService, router) {
+        this.gameService = gameService;
+        this.router = router;
     }
     SearchGameListPageComponent.prototype.ngOnInit = function () {
-        this.newGames = this.newGameService.list();
+        var _this = this;
+        var data = this.name = sessionStorage.getItem(name);
+        this.gameService.getGame('Need for speed').subscribe(function (gameResponse) {
+            _this.game = gameResponse;
+        });
     };
     return SearchGameListPageComponent;
 }());
@@ -1750,10 +1634,10 @@ SearchGameListPageComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/pages/searchGame-list-page/searchGame-list-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/searchGame-list-page/searchGame-list-page.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_newGame_service__["a" /* NewGameService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_newGame_service__["a" /* NewGameService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_game_service__["a" /* GameService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_game_service__["a" /* GameService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _b || Object])
 ], SearchGameListPageComponent);
 
-var _a;
+var _a, _b;
 //# sourceMappingURL=searchGame-list-page.component.js.map
 
 /***/ }),
@@ -1848,6 +1732,92 @@ var _a, _b, _c;
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/topGames-list-page/topGames-list-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".container{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(120, 120, 122, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n\n#centerbrand{\n    position: relative;\n    width: 300px;\n    height: 100px;\n}\n\n#tabla{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(0, 0, 0, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/topGames-list-page/topGames-list-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>\r\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\r\n<!------ Include the above in your HEAD tag ---------->\r\n\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"panel panel-default\">\r\n            <div class=\"panel-heading\">\r\n                <div class=\"panel-body\">\r\n\r\n                    <hr>\r\n                    <ul class=\"container details\" >\r\n\r\n                    </ul>\r\n                    <hr>\r\n                    <h2> </h2>\r\n                    <table id=\"tabla\" class=\"table table-bordered\">\r\n\r\n                        <tr *ngFor=\"let game of games\">\r\n                            <td>RATE = {{game.rateAcum}}<img [src]=\"game.image\" width=\"150\" height=\"150\" /></td>\r\n                            <td><h2> {{game.name}}</h2>{{game.description}}</td>\r\n                        </tr>\r\n\r\n                    </table>\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/topGames-list-page/topGames-list-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TopGamesListPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_game__ = __webpack_require__("../../../../../src/app/models/game.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_game_service__ = __webpack_require__("../../../../../src/app/services/game.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_seller__ = __webpack_require__("../../../../../src/app/models/seller.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_comment__ = __webpack_require__("../../../../../src/app/models/comment.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var TopGamesListPageComponent = (function () {
+    function TopGamesListPageComponent(gameService, router) {
+        this.gameService = gameService;
+        this.router = router;
+        this.comm = [new __WEBPACK_IMPORTED_MODULE_5__models_comment__["a" /* Comment */]('Exelente juego lo recomiendo para PSP', 'Laura Sanchez', 5, 1)];
+        this.seller1 = [new __WEBPACK_IMPORTED_MODULE_3__models_seller__["a" /* Seller */]('$359.900 ', 'www.Nintendo.com'), new __WEBPACK_IMPORTED_MODULE_3__models_seller__["a" /* Seller */]('$500 000 ', 'listado.mercadolibre.com.mx/juegos-de-mario-bros-gratis')];
+        this.games = [new __WEBPACK_IMPORTED_MODULE_1__models_game__["a" /* Game */](1, 'Super Mario Bros.', '/assets/images/mario.jpg ', this.comm, 'Is a platform video game, designed by Shigeru Miyamoto,' +
+                ' released on September 13, 1985 and produced by the company Nintendo, for the Nintendo Entertainment System (NES). The game describes the adventures of brothers Mario and Luigi, characters who already starred in the arcade Mario Bros. of 1983.' +
+                ' This time both must rescue Princess Peach Mushroom Kingdom who was kidnapped by' +
+                ' the King of the Koopas, Bowser.', 5, this.seller1), new __WEBPACK_IMPORTED_MODULE_1__models_game__["a" /* Game */](1, 'need for speed', '/assets/images/need.jpg', [], 'Set in the underworld of Fortune Valley, you and your crew are reunited by a search for vengeance against The House,' +
+                ' a nefarious cartel that rules the city’s casinos, criminals, and cops. In this corrupt gambler’s paradise,the stakes are high and The House always wins. Play a variety of events as Tyler, Mac, and Jess. Earn the respect of the Valley’s underground and compete in the ' +
+                'ultimate race to finally take down The House.', 5, [])];
+    }
+    TopGamesListPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.gameService.getTop().subscribe(function (gameResponse) {
+            _this.games = gameResponse;
+        });
+    };
+    return TopGamesListPageComponent;
+}());
+TopGamesListPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-topGames-list-page',
+        template: __webpack_require__("../../../../../src/app/pages/topGames-list-page/topGames-list-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/topGames-list-page/topGames-list-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_game_service__["a" /* GameService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_game_service__["a" /* GameService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === "function" && _b || Object])
+], TopGamesListPageComponent);
+
+var _a, _b;
+//# sourceMappingURL=topGames-list-page.component.js.map
 
 /***/ }),
 
@@ -2015,15 +1985,29 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/comments.service.ts":
+/***/ "../../../../../src/app/services/game.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommentsService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_comment__ = __webpack_require__("../../../../../src/app/models/comment.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_api_service__ = __webpack_require__("../../../../../src/app/common/api.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_config_app_configuration_service__ = __webpack_require__("../../../../../src/app/common/config/app-configuration.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2036,119 +2020,38 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CommentsService = (function () {
-    function CommentsService() {
-        this.comments = [
-            new __WEBPACK_IMPORTED_MODULE_1__models_comment__["a" /* Comment */]('Johanita', 'Juego muy bueno'),
-        ];
+
+
+
+
+var GameService = (function (_super) {
+    __extends(GameService, _super);
+    function GameService(config, authService, http) {
+        var _this = _super.call(this, config, authService, http) || this;
+        _this.config = config;
+        _this.authService = authService;
+        _this.http = http;
+        _this.resourceUrl = 'searchGame/';
+        return _this;
     }
-    CommentsService.prototype.list = function () {
-        return this.comments;
+    GameService.prototype.getGame = function (name) {
+        return this.get(this.resourceUrl + name);
     };
-    CommentsService.prototype.create = function (name, description) {
-        this.comments.push(new __WEBPACK_IMPORTED_MODULE_1__models_comment__["a" /* Comment */](name, description));
+    GameService.prototype.getTop = function () {
+        return this.get(this.resourceUrl + top);
     };
-    return CommentsService;
-}());
-CommentsService = __decorate([
+    GameService.prototype.registerCommentByGame = function (value0, value1, value2) {
+        return this.post(this.resourceUrl + "game", new __WEBPACK_IMPORTED_MODULE_1__models_comment__["a" /* Comment */](value0, value1, value2, 2));
+    };
+    return GameService;
+}(__WEBPACK_IMPORTED_MODULE_2__common_api_service__["a" /* APIService */]));
+GameService = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
-    __metadata("design:paramtypes", [])
-], CommentsService);
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__common_config_app_configuration_service__["a" /* AppConfiguration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__common_config_app_configuration_service__["a" /* AppConfiguration */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__common_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__common_auth_service__["a" /* AuthService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* Http */]) === "function" && _c || Object])
+], GameService);
 
-//# sourceMappingURL=comments.service.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/services/descriptionGame.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DescriptionGameService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_description__ = __webpack_require__("../../../../../src/app/models/description.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var DescriptionGameService = (function () {
-    function DescriptionGameService() {
-        this.DescriptionGames = [
-            new __WEBPACK_IMPORTED_MODULE_1__models_description__["a" /* DescriptionGame */]('https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_SuperMarioBros_image1600w.jpg', 'Mario Bros', 'Diseñada bajo la premisa de una buena relación calidad precio, Nintendo 2DS es perfecta como primera consola y permite jugar los títulos más populares de Nintendo 3DS en 2D. Con Nintendo 2DS podrás disfrutar de juegos, aplicaciones y funciones increíbles que te permitirán conectar con amigos y con la comunidad global de Nintendo.', '$359.900 ', 'GameStory', 'www.Nintendo.com'),
-            new __WEBPACK_IMPORTED_MODULE_1__models_description__["a" /* DescriptionGame */]('assets/images/mario.jpg', 'Mario Bros', 'The announcement sent Nintendo d expect. But fans hoping for iOS versions of early Super Mario Bros and Zelda games, or even ports of N64-era classics, should park those expectations, as Ninty will be working on new games from the ground up, tailored to pocket-sized touchscreen devices', '$500 000 ', 'TiendaOnline', 'listado.mercadolibre.com.mx/juegos-de-mario-bros-gratis'),
-        ];
-    }
-    DescriptionGameService.prototype.list = function () {
-        return this.DescriptionGames;
-    };
-    DescriptionGameService.prototype.create = function (photo, name, description, price, storeGame, link) {
-        this.DescriptionGames.push(new __WEBPACK_IMPORTED_MODULE_1__models_description__["a" /* DescriptionGame */](photo, name, description, price, storeGame, link));
-    };
-    return DescriptionGameService;
-}());
-DescriptionGameService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
-    __metadata("design:paramtypes", [])
-], DescriptionGameService);
-
-//# sourceMappingURL=descriptionGame.service.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/services/newGame.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewGameService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_newGame__ = __webpack_require__("../../../../../src/app/models/newGame.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var NewGameService = (function () {
-    function NewGameService() {
-        this.newGames = [
-            new __WEBPACK_IMPORTED_MODULE_1__models_newGame__["a" /* NewGame */]('/assets/images/need.jpg ', 'Need for Speed', ' It is a franchise of video game of racing action created by Electronic Arts and currently developed by Ghost Games.'),
-            new __WEBPACK_IMPORTED_MODULE_1__models_newGame__["a" /* NewGame */]('/assets/images/w.jpg ', 'Warcraft: Orcs & Humans', 'Is a strategy video game created by Blizzard Entertainment for PC. It is one of the first games of the real-time strategy or RTS genre . Warcraft: Orcs & Humans starts the Warcraft series and takes place in a medieval epic environment where humans from the mythical kingdom of Azeroth confront the invading orcs among other fantastic creatures .'),
-            new __WEBPACK_IMPORTED_MODULE_1__models_newGame__["a" /* NewGame */]('/assets/images/world.jpg ', 'League of Legends', 'Is a competitive online game with a frenetic rhythm that fuses the speed and intensity of the real-time strategy (ETR) with elements of role-playing games. Two teams of powerful champions, one with a unique design and style of games, compete with the face through various battlefields and game modes. With an ever-expanding roster of champions, frequent updates and an exciting competitive landscape, League of Legends offers unlimited gaming possibilities for all skill levels.'),
-            new __WEBPACK_IMPORTED_MODULE_1__models_newGame__["a" /* NewGame */]('/assets/images/sea.jpg ', 'Sea of Thieves', ' Sea of ​​Thieves is a first-person video game developed by Rare and distributed by Microsoft. It will go on sale in 2018 for Xbox One'),
-            new __WEBPACK_IMPORTED_MODULE_1__models_newGame__["a" /* NewGame */]('/assets/images/mario.jpg ', 'Super Mario Bros.', 'Is a platform video game, designed by Shigeru Miyamoto, released on September 13, 1985 and produced by the company Nintendo, for the Nintendo Entertainment System (NES). The game describes the adventures of brothers Mario and Luigi, characters who already starred in the arcade Mario Bros. of 1983. This time both must rescue Princess Peach Mushroom Kingdom who was kidnapped by the King of the Koopas, Bowser.')
-        ];
-    }
-    NewGameService.prototype.list = function () {
-        return this.newGames;
-    };
-    NewGameService.prototype.create = function (name, description, photo) {
-        this.newGames.push(new __WEBPACK_IMPORTED_MODULE_1__models_newGame__["a" /* NewGame */](name, description, photo));
-    };
-    return NewGameService;
-}());
-NewGameService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
-    __metadata("design:paramtypes", [])
-], NewGameService);
-
-//# sourceMappingURL=newGame.service.js.map
+var _a, _b, _c;
+//# sourceMappingURL=game.service.js.map
 
 /***/ }),
 
