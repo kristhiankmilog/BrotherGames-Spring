@@ -1411,7 +1411,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".container{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(120, 120, 122, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: left;\n}", ""]);
 
 // exports
 
